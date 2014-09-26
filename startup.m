@@ -1,0 +1,17 @@
+addpath('selective_search');
+addpath('selective_search/SelectiveSearchCodeIJCV');
+addpath('selective_search/SelectiveSearchCodeIJCV/Dependencies');
+addpath('vis');
+addpath('utils');
+addpath('bin');
+addpath('nms');
+addpath('finetuning');
+addpath('bbox_regression');
+addpath('external/caffe/matlab/caffe');
+addpath('external/liblinear/matlab');
+addpath('experiments');
+addpath('imdb');
+addpath('vis/pool5-explorer');
+addpath('examples');
+addpath('rcnn');
+fprintf('Startup Done\n');
