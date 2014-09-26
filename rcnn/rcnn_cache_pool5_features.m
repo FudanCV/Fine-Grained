@@ -63,8 +63,8 @@ fprintf('~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n');
 % load the region of interest database
 roidb = imdb.roidb_func(imdb);
 
-%rcnn_model = rcnn_create_model(opts.net_def_file, opts.net_file);
-rcnn_model = rcnn_create_model('./model-defs/ilsvrc_batch_256_output_pool5.prototxt', './data/caffe_nets/ilsvrc_2014_train_iter_610k');
+rcnn_model = rcnn_create_model(opts.net_def_file, opts.net_file);
+%rcnn_model = rcnn_create_model('./model-defs/ilsvrc_batch_256_output_pool5.prototxt', './data/caffe_nets/ilsvrc_2014_train_iter_610k');
 rcnn_model = rcnn_load_model(rcnn_model);
 rcnn_model.detectors.crop_mode = opts.crop_mode;
 rcnn_model.detectors.crop_padding = opts.crop_padding;
