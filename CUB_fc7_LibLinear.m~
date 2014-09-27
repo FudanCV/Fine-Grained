@@ -6,7 +6,7 @@ ImageList = importdata('./datasets/CUB_200_2011/list_images.txt'); load('CUB_Reg
 Y_raw = importdata('./datasets/CUB_200_2011/list_image_class_labels.txt');
 split = importdata('./datasets/CUB_200_2011/list_train_test_split.txt');
 
-for iter=1:2
+for iter=3:3
   rcnn_model = rcnn_create_model('./model-defs/CUB_batch_64_output_fc7.prototxt', ['./data/caffe_nets/cub_finetune_train_iter_' num2str(iter*10000)]);
   rcnn_model = rcnn_load_model(rcnn_model); rcnn_model.detectors.crop_mode = 'wrap'; rcnn_model.detectors.crop_padding = 16;
 
@@ -19,7 +19,7 @@ for iter=1:2
 
   X_trn = []; Y_trn = []; N_trn = 0; X_tst = []; Y_tst = []; N_tst = 0; N_ROI = 64; K_means = 3;
   for i = 1:11788
-    fprintf('%s: CNN Feature: #%d\n', procid(), i);
+    %fprintf('%s: CNN Feature: #%d\n', procid(), i);
     for j=1:N_ROI
       boxes(j,1)=Regions(i,j,1);
       boxes(j,2)=Regions(i,j,2);

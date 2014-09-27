@@ -6,8 +6,8 @@ ImageList = importdata('./datasets/CUB_200_2011/list_images.txt'); load('CUB_Reg
 Y_raw = importdata('./datasets/CUB_200_2011/list_image_class_labels.txt');
 split = importdata('./datasets/CUB_200_2011/list_train_test_split.txt');
 
-for iter=1:4
-  rcnn_model = rcnn_create_model('./model-defs/CUB_batch_64_output_fc7.prototxt', ['./data/caffe_nets/cub_finetune_train_iter_' num2str(iter*10000)]);
+for iter=3:4
+  rcnn_model = rcnn_create_model('./model-defs/CUB_batch_64_output_fc6.prototxt', ['./data/caffe_nets/cub_finetune_train_iter_' num2str(iter*10000)]);
   rcnn_model = rcnn_load_model(rcnn_model); rcnn_model.detectors.crop_mode = 'wrap'; rcnn_model.detectors.crop_padding = 16;
 
 %Extract CNN_pool6_features for CUB_200_2011
@@ -17,7 +17,7 @@ for iter=1:4
 %    X(i,:) = rcnn_features(im, boxes, rcnn_model);
 %  end
 
-  X_trn = []; Y_trn = []; N_trn = 0; X_tst = []; Y_tst = []; N_tst = 0; N_ROI = 64; K_means = 3;
+  X = []; Y = []; X_trn = []; Y_trn = []; N_trn = 0; X_tst = []; Y_tst = []; N_tst = 0; N_ROI = 64; K_means = 3;
   for i = 1:11788
     %fprintf('%s: CNN Feature: #%d\n', procid(), i);
     for j=1:N_ROI
@@ -28,6 +28,7 @@ for iter=1:4
     end
     im = imread(['./datasets/CUB_200_2011/images/' ImageList{i}]); label = Y_raw(i,:);
     features = rcnn_features(im, boxes, rcnn_model)';
+    X(i,:) = features'; Y(i,:) = label;
     [means, covariances, priors] = vl_gmm(features,K_means);
     feat = vl_fisher(features, means, covariances, priors)'; 
     if split(i,:) == 1
