@@ -6,7 +6,7 @@ ImageList = importdata('./datasets/CUB_200_2011/list_images.txt'); load('CUB_Reg
 Y_raw = importdata('./datasets/CUB_200_2011/list_image_class_labels.txt');
 split = importdata('./datasets/CUB_200_2011/list_train_test_split.txt');
 
-rcnn_model = rcnn_create_model('./model-defs/CUB_batch_64_output_fc6.prototxt', './data/caffe_nets/cub_finetune_train_iter_40000');
+rcnn_model = rcnn_create_model(1,'./model-defs/CUB_batch_64_output_fc6.prototxt', './data/caffe_nets/cub_finetune_train_iter_30000');
 rcnn_model = rcnn_load_model(rcnn_model); rcnn_model.detectors.crop_mode = 'wrap'; rcnn_model.detectors.crop_padding = 16;
   
 total_time = 0; X_trn = []; Y_trn = []; N_trn = 0; X_tst = []; Y_tst = []; N_tst = 0;
@@ -26,19 +26,7 @@ for i = 1:11788
     Y_trn(N_trn,:) = Y(i,:);
   else
     N_tst = N_tst + 1;
-    X_tst(N_tst,:) = X(i,:);
-    Y_tst(N_tst,:) = Y(i,:);
-  end
-end
-
-for i=1:11788
-  if split(i,:) == 1
-    N_trn = N_trn + 1;
-    X_trn(N_trn,:) = X(i,:);
-    Y_trn(N_trn,:) = Y(i,:);
-  else
-    N_tst = N_tst + 1;
-    X_tst(N_tst,:) = X(i,:);
+    X_tst(N_tst,:) = features;
     Y_tst(N_tst,:) = Y(i,:);
   end
 end

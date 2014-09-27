@@ -1,4 +1,4 @@
-function rcnn_model = rcnn_create_model(cnn_definition_file, cnn_binary_file, cache_name)
+function rcnn_model = rcnn_create_model(batch_size, cnn_definition_file, cnn_binary_file, cache_name)
 % AUTORIGHTS
 % ---------------------------------------------------------
 % Copyright (c) 2014, Ross Girshick
@@ -43,7 +43,7 @@ assert(exist(cnn_binary_file, 'file') ~= 0);
 assert(exist(cnn_definition_file, 'file') ~= 0);
 cnn.binary_file = cnn_binary_file;
 cnn.definition_file = cnn_definition_file;
-cnn.batch_size = 1;
+cnn.batch_size = batch_size;
 cnn.init_key = -1;
 cnn.input_size = 227;
 % load the ilsvrc image mean
