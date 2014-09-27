@@ -14,6 +14,7 @@ addpath('imdb');
 addpath('vis/pool5-explorer');
 addpath('examples');
 addpath('rcnn');
+addpath('pLSA');
 addpath('VOCcode');
 run('external/vlfeat/toolbox/vl_setup')
 maxNumCompThreads(32);
