@@ -2,7 +2,7 @@
 BoundingBoxList = importdata('./datasets/CUB_200_2011/list_bounding_boxes.txt');
 BoundingBoxList(:,3) = BoundingBoxList(:,1) + BoundingBoxList(:,3)-1; %x2=x1+width
 BoundingBoxList(:,4) = BoundingBoxList(:,2) + BoundingBoxList(:,4)-1; %y2=y1+height 
-ImageList = importdata('./datasets/CUB_200_2011/list_images.txt');
+ImageList = importdata('./datasets/CUB_200_2011/list_images.txt'); load('CUB_Regions.mat');
 Y_raw = importdata('./datasets/CUB_200_2011/list_image_class_labels.txt');
 split = importdata('./datasets/CUB_200_2011/list_train_test_split.txt');
 

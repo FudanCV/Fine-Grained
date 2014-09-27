@@ -19,7 +19,7 @@ for iter=1:2
 
   X_trn = []; Y_trn = []; N_trn = 0; X_tst = []; Y_tst = []; N_tst = 0; N_ROI = 64; K_means = 3;
   for i = 1:11788
-    fprintf('%s: CNN Feature: #%d\n', procid(), i);
+    %fprintf('%s: CNN Feature: #%d\n', procid(), i);
     for j=1:N_ROI
       boxes(j,1)=Regions(i,j,1);
       boxes(j,2)=Regions(i,j,2);
