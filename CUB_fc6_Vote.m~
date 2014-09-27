@@ -18,7 +18,7 @@ rcnn_model = rcnn_load_model(rcnn_model); rcnn_model.detectors.crop_mode = 'wrap
 
 X_trn = []; Y_trn = []; N_trn = 0; X_tst = []; Y_tst = []; N_tst = 0; N_ROI = 32;
 for i = 1:11788
-  %fprintf('%s: CNN Feature: #%d\n', procid(), i);
+  fprintf('%s: CNN Feature: #%d\n', procid(), i);
   for j=1:N_ROI
     boxes(j,1)=Regions(i,j,1);
     boxes(j,2)=Regions(i,j,2);
@@ -45,15 +45,14 @@ for i = 1:11788
 end
 
 %Train and test LibLinearSVM
-model = train(Y_trn,sparse(X_trn));
+model = train(Y_trn,sparse(X_trn),'-s 0');
 [Y_hat,accuracy, votes]=predict(Y_tst,sparse(X_tst),model);
 
 %Calculate mAP
-PC = zeros(N_tst,200);
+PC = zeros(N_tst,200); TopN=5; tot = 0; 
 for i=1:N_tst*N_ROI
   PC(ceil(i/N_ROI),Y_hat(i,:)) = PC(ceil(i/N_ROI),Y_hat(i,:)) + Z_tst(i,:);
 end
-TopN=5; tot = 0; %load('CUB_selective_dense_region_6_LibLinear.mat');
 for i=1:N_tst
   rerank=PC(i,:)';
   for j=1:200

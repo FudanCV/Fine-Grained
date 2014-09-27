@@ -9,13 +9,6 @@ split = importdata('./datasets/CUB_200_2011/list_train_test_split.txt');
 rcnn_model = rcnn_create_model(32,'./model-defs/CUB_batch_32_output_fc6.prototxt', './data/caffe_nets/cub_finetune_train_iter_50000');
 rcnn_model = rcnn_load_model(rcnn_model); rcnn_model.detectors.crop_mode = 'wrap'; rcnn_model.detectors.crop_padding = 16;
 
-%Extract CNN_pool6_features for CUB_200_2011
-%  for i = 1:11788
-%    boxes = BoundingBoxList(i,:);
-%    im = imread(['./datasets/CUB_200_2011/images/' ImageList{i}]);
-%    X(i,:) = rcnn_features(im, boxes, rcnn_model);
-%  end
-
 X_trn = []; Y_trn = []; N_trn = 0; X_tst = []; Y_tst = []; N_tst = 0; N_ROI = 32;
 for i = 1:11788
   fprintf('%s: CNN Feature: #%d\n', procid(), i);
@@ -45,15 +38,14 @@ for i = 1:11788
 end
 
 %Train and test LibLinearSVM
-model = train(Y_trn,sparse(X_trn));
+model = train(Y_trn,sparse(X_trn),'-s 0');
 [Y_hat,accuracy, votes]=predict(Y_tst,sparse(X_tst),model);
 
 %Calculate mAP
-PC = zeros(N_tst,200);
+PC = zeros(N_tst,200); TopN=5; tot = 0; 
 for i=1:N_tst*N_ROI
   PC(ceil(i/N_ROI),Y_hat(i,:)) = PC(ceil(i/N_ROI),Y_hat(i,:)) + Z_tst(i,:);
 end
-TopN=5; tot = 0; %load('CUB_selective_dense_region_6_LibLinear.mat');
 for i=1:N_tst
   rerank=PC(i,:)';
   for j=1:200
