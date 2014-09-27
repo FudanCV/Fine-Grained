@@ -6,8 +6,8 @@ ImageList = importdata('./datasets/CUB_200_2011/list_images.txt'); load('CUB_Reg
 Y_raw = importdata('./datasets/CUB_200_2011/list_image_class_labels.txt');
 split = importdata('./datasets/CUB_200_2011/list_train_test_split.txt');
 
-for iter=3:3
-  rcnn_model = rcnn_create_model('./model-defs/CUB_batch_64_output_fc7.prototxt', ['./data/caffe_nets/cub_finetune_train_iter_' num2str(iter*10000)]);
+for iter=1:4
+  rcnn_model = rcnn_create_model(64,'./model-defs/CUB_batch_64_output_fc7.prototxt', ['./data/caffe_nets/cub_finetune_train_iter_' num2str(iter*10000)]);
   rcnn_model = rcnn_load_model(rcnn_model); rcnn_model.detectors.crop_mode = 'wrap'; rcnn_model.detectors.crop_padding = 16;
 
 %Extract CNN_pool6_features for CUB_200_2011
