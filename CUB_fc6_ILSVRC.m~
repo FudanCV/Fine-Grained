@@ -31,8 +31,7 @@ for i = 1:11788
   end
 end
 
-train_time = tic;
-model = train(Y_trn,sparse(X_trn),'-s 0');
+train_time = tic; model = train(Y_trn,sparse(X_trn),'-s 0');
 [Y_hat, accuracy, votes]=predict(Y_tst,sparse(X_tst),model);
 
 Check=votes; Check(:,201)=Y_hat; Check(:,202)=Y_tst; AP=[];

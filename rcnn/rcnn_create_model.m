@@ -1,4 +1,4 @@
-function rcnn_model = rcnn_create_model(batch_size, cnn_definition_file, cnn_binary_file, cache_name)
+function rcnn_model = rcnn_create_model(batch_size, input_size, cnn_definition_file, cnn_binary_file, cache_name)
 % AUTORIGHTS
 % ---------------------------------------------------------
 % Copyright (c) 2014, Ross Girshick
@@ -45,7 +45,7 @@ cnn.binary_file = cnn_binary_file;
 cnn.definition_file = cnn_definition_file;
 cnn.batch_size = batch_size;
 cnn.init_key = -1;
-cnn.input_size = 227;
+cnn.input_size = input_size;
 % load the ilsvrc image mean
 data_mean_file = './external/caffe/matlab/caffe/ilsvrc_2012_mean.mat';
 assert(exist(data_mean_file, 'file') ~= 0);
