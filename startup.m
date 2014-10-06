@@ -7,6 +7,7 @@ addpath('bin');
 addpath('nms');
 addpath('finetuning');
 addpath('bbox_regression');
+addpath('external/pLSA');
 addpath('external/caffe/matlab/caffe');
 addpath('external/liblinear/matlab');
 addpath('experiments');
@@ -14,8 +15,8 @@ addpath('imdb');
 addpath('vis/pool5-explorer');
 addpath('examples');
 addpath('rcnn');
-addpath('pLSA');
 addpath('VOCcode');
+addpath('DeepPyramid');
 run('external/vlfeat/toolbox/vl_setup')
 maxNumCompThreads(32);
 setenv('OMP_NUM_THREADS','32');
