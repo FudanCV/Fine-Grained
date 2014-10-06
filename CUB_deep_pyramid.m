@@ -1,10 +1,11 @@
 BoundingBoxList = importdata('./datasets/CUB_200_2011/list_bounding_boxes.txt');
 BoundingBoxList(:,3) = BoundingBoxList(:,1) + BoundingBoxList(:,3)-1; %x2=x1+width
 BoundingBoxList(:,4) = BoundingBoxList(:,2) + BoundingBoxList(:,4)-1; %y2=y1+height 
-ImageList = importdata('./datasets/CUB_200_2011/list_images.txt'); load('CUB_Regions.mat');
-Y_raw = importdata('./datasets/CUB_200_2011/list_image_class_labels.txt');
-split = importdata('./datasets/CUB_200_2011/list_train_test_split.txt');
-image_mean = load('./external/caffe/matlab/caffe/ilsvrc_2012_mean.mat');
+MatList = importdata('./datasets/CUB_200_2011/list_mat.txt');
+ImageList = importdata('./datasets/CUB_200_2011/list_images.txt'); %load('CUB_Regions.mat');
+%Y_raw = importdata('./datasets/CUB_200_2011/list_image_class_labels.txt');
+%split = importdata('./datasets/CUB_200_2011/list_train_test_split.txt');
+%image_mean = load('./external/caffe/matlab/caffe/ilsvrc_2012_mean.mat');
 
 X_trn = []; Y_trn = []; N_trn = 0; X_tst = []; Y_tst = []; N_tst = 0; 
 cache_opts = []; padx = 0; pady = 0; total_time = 0; USE_GPU = true; USE_CAFFE = true; 
@@ -22,35 +23,21 @@ for i = 1:11788
   pyra = deep_pyramid_add_padding(deep_pyramid(im, cnn, cache_opts), padx, pady);
   fprintf(' [features: %.3fs]\n', toc(th)); total_time = total_time + toc(tot_th);
   fprintf(' [avg time: %.3fs (total: %.3fs)]\n', total_time/i, total_time);
-  for k=1:7
-    current = reshape(pyra.feat{k},1,pyra.level_sizes(k)*pyra.level_sizes(k)*256);
-    features = [features,current];
-  end
-  if split(i,:) == 1
-    N_trn = N_trn + 1;
-    X_trn(N_trn,:) = features;
-    Y_trn(N_trn,:) = Y_raw(i,:);
-  else
-    N_tst = N_tst + 1;
-    X_tst(N_tst,:) = features;
-    Y_tst(N_tst,:) = Y_raw(i,:);
-  end
+  save(['./datasets/CUB_200_2011/DeepPyramid/' MatList{i}],'pyra','-v7.3');
+  %for k=1:pyra.num_levels
+  %  current = reshape(pyra.feat{k},1,pyra.level_sizes(k)*pyra.level_sizes(k)*256);
+  %  features = [features,current];
+  %end
+  %if split(i,:) == 1
+  %  N_trn = N_trn + 1;
+  %  X_trn(N_trn,:) = features;
+  %  Y_trn(N_trn,:) = Y_raw(i,:);
+  %else
+  %  N_tst = N_tst + 1;
+  %  X_tst(N_tst,:) = features;
+  %  Y_tst(N_tst,:) = Y_raw(i,:);
+  %end
 end
-
-save('CUB_DeepPyramid.mat','X_trn','X_tst','Y_trn','Y_tst','-v7.3'); exit;
-train_time = tic; model = train(Y_trn,sparse(X_trn),'-s 2');
-[Y_hat, accuracy, votes]=predict(Y_tst,sparse(X_tst),model);
-
-Check=votes; Check(:,201)=Y_hat; Check(:,202)=Y_tst; AP=[];
-for class=1:200
-  tot = 0; ok = 0.0;
-  Check = sortrows(Check,-class);
-  for i=1:N_tst
-    if Check(i,202) == class
-       tot = tot + 1; ok = ok + tot/i;
-    end
-  end
-  AP(class) = ok/tot;
-end
-fprintf(' [time: %.3fs] mAP %f\n', toc(train_time), mean(AP));
+exit;
+%save('CUB_DeepPyramid.mat','X_trn','X_tst','Y_trn','Y_tst','-v7.3'); 
 
