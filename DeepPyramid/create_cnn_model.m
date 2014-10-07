@@ -1,5 +1,5 @@
-function cnn = init_cnn_model(varargin)
-% cnn = init_cnn_model
+function cnn = create_cnn_model(varargin)
+% cnn = create_cnn_model
 % Initialize a CNN with caffe
 %
 % Optional arguments
@@ -32,7 +32,7 @@ ip.addParamValue('net_file', ...
 % './model-defs/pyramid_cnn_output_conv5_scales_7_plane_1713.prototxt', ...
 % network prototxt file
 ip.addParamValue('def_file', ...
-    './model-defs/pyramid_cnn_output_conv5_scales_7_plane_1713.prototxt', ...
+    './model-defs/pyramid_cnn_output_fc6_scales_7_plane_1713.prototxt', ...
     @isstr);
 
 % Set use_gpu to false to use the CPU
