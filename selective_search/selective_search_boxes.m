@@ -4,7 +4,7 @@ function boxes = selective_search_boxes(im, fast_mode, im_width)
 % IJCV code.
 
 if ~exist('fast_mode', 'var') || isempty(fast_mode)
-  fast_mode = true;
+  fast_mode = false;
 end
 
 if ~exist('im_width', 'var') || isempty(im_width)

@@ -8,6 +8,8 @@ addpath('nms');
 addpath('finetuning');
 addpath('bbox_regression');
 addpath('external/pLSA');
+addpath('external/Ncut');
+addpath('external/LabelTree');
 addpath('external/caffe/matlab/caffe');
 addpath('external/liblinear/matlab');
 addpath('experiments');
@@ -18,6 +20,9 @@ addpath('rcnn');
 addpath('VOCcode');
 addpath('DeepPyramid');
 run('external/vlfeat/toolbox/vl_setup')
+cd external/MCG
+install
+cd ../../
 maxNumCompThreads(32);
 setenv('OMP_NUM_THREADS','32');
 fprintf('Startup Done\n');

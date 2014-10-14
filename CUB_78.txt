@@ -1,0 +1,999 @@
+No.1:
+F-score = 57.6271%
+Precision = 58.6207% (17/29)
+Recall = 56.6667% (17/30)
+
+No.2:
+F-score = 67.7419%
+Precision = 65.625% (21/32)
+Recall = 70% (21/30)
+
+No.3:
+F-score = 73.8462%
+Precision = 64.8649% (24/37)
+Recall = 85.7143% (24/28)
+
+No.4:
+F-score = 85.7143%
+Precision = 81.8182% (27/33)
+Recall = 90% (27/30)
+
+No.5:
+F-score = 89.6552%
+Precision = 86.6667% (13/15)
+Recall = 92.8571% (13/14)
+
+No.6:
+F-score = 95.6522%
+Precision = 91.6667% (11/12)
+Recall = 100% (11/11)
+
+No.7:
+F-score = 97.8723%
+Precision = 95.8333% (23/24)
+Recall = 100% (23/23)
+
+No.8:
+F-score = 78.0488%
+Precision = 69.5652% (16/23)
+Recall = 88.8889% (16/18)
+
+No.9:
+F-score = 65.5172%
+Precision = 65.5172% (19/29)
+Recall = 65.5172% (19/29)
+
+No.10:
+F-score = 93.1034%
+Precision = 96.4286% (27/28)
+Recall = 90% (27/30)
+
+No.11:
+F-score = 46.4286%
+Precision = 50% (13/26)
+Recall = 43.3333% (13/30)
+
+No.12:
+F-score = 96.2963%
+Precision = 92.8571% (26/28)
+Recall = 100% (26/26)
+
+No.13:
+F-score = 91.8033%
+Precision = 90.3226% (28/31)
+Recall = 93.3333% (28/30)
+
+No.14:
+F-score = 95.082%
+Precision = 93.5484% (29/31)
+Recall = 96.6667% (29/30)
+
+No.15:
+F-score = 94.7368%
+Precision = 93.1034% (27/29)
+Recall = 96.4286% (27/28)
+
+No.16:
+F-score = 96.2963%
+Precision = 100% (26/26)
+Recall = 92.8571% (26/28)
+
+No.17:
+F-score = 85.1852%
+Precision = 85.1852% (23/27)
+Recall = 85.1852% (23/27)
+
+No.18:
+F-score = 93.3333%
+Precision = 93.3333% (14/15)
+Recall = 93.3333% (14/15)
+
+No.19:
+F-score = 86.6667%
+Precision = 83.871% (26/31)
+Recall = 89.6552% (26/29)
+
+No.20:
+F-score = 89.6552%
+Precision = 89.6552% (26/29)
+Recall = 89.6552% (26/29)
+
+No.21:
+F-score = 92.8571%
+Precision = 100% (26/26)
+Recall = 86.6667% (26/30)
+
+No.22:
+F-score = 74.5098%
+Precision = 76% (19/25)
+Recall = 73.0769% (19/26)
+
+No.23:
+F-score = 64.4068%
+Precision = 63.3333% (19/30)
+Recall = 65.5172% (19/29)
+
+No.24:
+F-score = 81.8182%
+Precision = 81.8182% (18/22)
+Recall = 81.8182% (18/22)
+
+No.25:
+F-score = 60%
+Precision = 60% (18/30)
+Recall = 60% (18/30)
+
+No.26:
+F-score = 85.2459%
+Precision = 83.871% (26/31)
+Recall = 86.6667% (26/30)
+
+No.27:
+F-score = 27.451%
+Precision = 33.3333% (7/21)
+Recall = 23.3333% (7/30)
+
+No.28:
+F-score = 89.6552%
+Precision = 89.6552% (26/29)
+Recall = 89.6552% (26/29)
+
+No.29:
+F-score = 44.0678%
+Precision = 44.8276% (13/29)
+Recall = 43.3333% (13/30)
+
+No.30:
+F-score = 45.0704%
+Precision = 39.0244% (16/41)
+Recall = 53.3333% (16/30)
+
+No.31:
+F-score = 77.193%
+Precision = 81.4815% (22/27)
+Recall = 73.3333% (22/30)
+
+No.32:
+F-score = 70.8333%
+Precision = 68% (17/25)
+Recall = 73.913% (17/23)
+
+No.33:
+F-score = 70.1754%
+Precision = 71.4286% (20/28)
+Recall = 68.9655% (20/29)
+
+No.34:
+F-score = 96.6667%
+Precision = 93.5484% (29/31)
+Recall = 100% (29/29)
+
+No.35:
+F-score = 95.082%
+Precision = 93.5484% (29/31)
+Recall = 96.6667% (29/30)
+
+No.36:
+F-score = 100%
+Precision = 100% (30/30)
+Recall = 100% (30/30)
+
+No.37:
+F-score = 34.4828%
+Precision = 34.4828% (10/29)
+Recall = 34.4828% (10/29)
+
+No.38:
+F-score = 83.0189%
+Precision = 95.6522% (22/23)
+Recall = 73.3333% (22/30)
+
+No.39:
+F-score = 31.5789%
+Precision = 32.1429% (9/28)
+Recall = 31.0345% (9/29)
+
+No.40:
+F-score = 65.625%
+Precision = 61.7647% (21/34)
+Recall = 70% (21/30)
+
+No.41:
+F-score = 90.9091%
+Precision = 100% (25/25)
+Recall = 83.3333% (25/30)
+
+No.42:
+F-score = 98.3051%
+Precision = 100% (29/29)
+Recall = 96.6667% (29/30)
+
+No.43:
+F-score = 40.625%
+Precision = 37.1429% (13/35)
+Recall = 44.8276% (13/29)
+
+No.44:
+F-score = 85.2459%
+Precision = 83.871% (26/31)
+Recall = 86.6667% (26/30)
+
+No.45:
+F-score = 72.7273%
+Precision = 80% (20/25)
+Recall = 66.6667% (20/30)
+
+No.46:
+F-score = 82.5397%
+Precision = 78.7879% (26/33)
+Recall = 86.6667% (26/30)
+
+No.47:
+F-score = 89.2857%
+Precision = 96.1538% (25/26)
+Recall = 83.3333% (25/30)
+
+No.48:
+F-score = 98.3051%
+Precision = 100% (29/29)
+Recall = 96.6667% (29/30)
+
+No.49:
+F-score = 59.1549%
+Precision = 51.2195% (21/41)
+Recall = 70% (21/30)
+
+No.50:
+F-score = 79.2453%
+Precision = 91.3043% (21/23)
+Recall = 70% (21/30)
+
+No.51:
+F-score = 84.375%
+Precision = 79.4118% (27/34)
+Recall = 90% (27/30)
+
+No.52:
+F-score = 96.7742%
+Precision = 93.75% (30/32)
+Recall = 100% (30/30)
+
+No.53:
+F-score = 96.5517%
+Precision = 100% (28/28)
+Recall = 93.3333% (28/30)
+
+No.54:
+F-score = 87.0968%
+Precision = 84.375% (27/32)
+Recall = 90% (27/30)
+
+No.55:
+F-score = 92.8571%
+Precision = 100% (26/26)
+Recall = 86.6667% (26/30)
+
+No.56:
+F-score = 88.5246%
+Precision = 87.0968% (27/31)
+Recall = 90% (27/30)
+
+No.57:
+F-score = 93.5484%
+Precision = 90.625% (29/32)
+Recall = 96.6667% (29/30)
+
+No.58:
+F-score = 87.2727%
+Precision = 88.8889% (24/27)
+Recall = 85.7143% (24/28)
+
+No.59:
+F-score = 36%
+Precision = 45% (9/20)
+Recall = 30% (9/30)
+
+No.60:
+F-score = 44%
+Precision = 52.381% (11/21)
+Recall = 37.931% (11/29)
+
+No.61:
+F-score = 88.1356%
+Precision = 89.6552% (26/29)
+Recall = 86.6667% (26/30)
+
+No.62:
+F-score = 26.6667%
+Precision = 26.6667% (8/30)
+Recall = 26.6667% (8/30)
+
+No.63:
+F-score = 92.0635%
+Precision = 87.8788% (29/33)
+Recall = 96.6667% (29/30)
+
+No.64:
+F-score = 40%
+Precision = 35% (14/40)
+Recall = 46.6667% (14/30)
+
+No.65:
+F-score = 52%
+Precision = 43.3333% (13/30)
+Recall = 65% (13/20)
+
+No.66:
+F-score = 62.5%
+Precision = 58.8235% (20/34)
+Recall = 66.6667% (20/30)
+
+No.67:
+F-score = 66.6667%
+Precision = 63.6364% (21/33)
+Recall = 70% (21/30)
+
+No.68:
+F-score = 83.6364%
+Precision = 92% (23/25)
+Recall = 76.6667% (23/30)
+
+No.69:
+F-score = 83.871%
+Precision = 81.25% (26/32)
+Recall = 86.6667% (26/30)
+
+No.70:
+F-score = 92.3077%
+Precision = 85.7143% (30/35)
+Recall = 100% (30/30)
+
+No.71:
+F-score = 44.8276%
+Precision = 46.4286% (13/28)
+Recall = 43.3333% (13/30)
+
+No.72:
+F-score = 54.2373%
+Precision = 55.1724% (16/29)
+Recall = 53.3333% (16/30)
+
+No.73:
+F-score = 87.7193%
+Precision = 92.5926% (25/27)
+Recall = 83.3333% (25/30)
+
+No.74:
+F-score = 89.2308%
+Precision = 82.8571% (29/35)
+Recall = 96.6667% (29/30)
+
+No.75:
+F-score = 96.4286%
+Precision = 93.1034% (27/29)
+Recall = 100% (27/27)
+
+No.76:
+F-score = 93.3333%
+Precision = 93.3333% (28/30)
+Recall = 93.3333% (28/30)
+
+No.77:
+F-score = 90%
+Precision = 90% (27/30)
+Recall = 90% (27/30)
+
+No.78:
+F-score = 77.6119%
+Precision = 68.4211% (26/38)
+Recall = 89.6552% (26/29)
+
+No.79:
+F-score = 87.8788%
+Precision = 80.5556% (29/36)
+Recall = 96.6667% (29/30)
+
+No.80:
+F-score = 82.7586%
+Precision = 85.7143% (24/28)
+Recall = 80% (24/30)
+
+No.81:
+F-score = 94.9153%
+Precision = 96.5517% (28/29)
+Recall = 93.3333% (28/30)
+
+No.82:
+F-score = 82.1429%
+Precision = 88.4615% (23/26)
+Recall = 76.6667% (23/30)
+
+No.83:
+F-score = 96.5517%
+Precision = 100% (28/28)
+Recall = 93.3333% (28/30)
+
+No.84:
+F-score = 85.1064%
+Precision = 83.3333% (20/24)
+Recall = 86.9565% (20/23)
+
+No.85:
+F-score = 93.1034%
+Precision = 96.4286% (27/28)
+Recall = 90% (27/30)
+
+No.86:
+F-score = 91.8033%
+Precision = 90.3226% (28/31)
+Recall = 93.3333% (28/30)
+
+No.87:
+F-score = 80%
+Precision = 88% (22/25)
+Recall = 73.3333% (22/30)
+
+No.88:
+F-score = 98.3607%
+Precision = 96.7742% (30/31)
+Recall = 100% (30/30)
+
+No.89:
+F-score = 87.2727%
+Precision = 96% (24/25)
+Recall = 80% (24/30)
+
+No.90:
+F-score = 84.7458%
+Precision = 86.2069% (25/29)
+Recall = 83.3333% (25/30)
+
+No.91:
+F-score = 71.1864%
+Precision = 72.4138% (21/29)
+Recall = 70% (21/30)
+
+No.92:
+F-score = 85.7143%
+Precision = 92.3077% (24/26)
+Recall = 80% (24/30)
+
+No.93:
+F-score = 95.2381%
+Precision = 90.9091% (30/33)
+Recall = 100% (30/30)
+
+No.94:
+F-score = 94.7368%
+Precision = 100% (27/27)
+Recall = 90% (27/30)
+
+No.95:
+F-score = 88.1356%
+Precision = 89.6552% (26/29)
+Recall = 86.6667% (26/30)
+
+No.96:
+F-score = 80.7692%
+Precision = 95.4545% (21/22)
+Recall = 70% (21/30)
+
+No.97:
+F-score = 85.1852%
+Precision = 92% (23/25)
+Recall = 79.3103% (23/29)
+
+No.98:
+F-score = 83.871%
+Precision = 81.25% (26/32)
+Recall = 86.6667% (26/30)
+
+No.99:
+F-score = 91.2281%
+Precision = 96.2963% (26/27)
+Recall = 86.6667% (26/30)
+
+No.100:
+F-score = 90.9091%
+Precision = 100% (25/25)
+Recall = 83.3333% (25/30)
+
+No.101:
+F-score = 95%
+Precision = 95% (19/20)
+Recall = 95% (19/20)
+
+No.102:
+F-score = 36.3636%
+Precision = 40% (10/25)
+Recall = 33.3333% (10/30)
+
+No.103:
+F-score = 51.7241%
+Precision = 53.5714% (15/28)
+Recall = 50% (15/30)
+
+No.104:
+F-score = 80.7018%
+Precision = 85.1852% (23/27)
+Recall = 76.6667% (23/30)
+
+No.105:
+F-score = 75.5556%
+Precision = 65.3846% (17/26)
+Recall = 89.4737% (17/19)
+
+No.106:
+F-score = 94.9153%
+Precision = 96.5517% (28/29)
+Recall = 93.3333% (28/30)
+
+No.107:
+F-score = 45.283%
+Precision = 52.1739% (12/23)
+Recall = 40% (12/30)
+
+No.108:
+F-score = 72.7273%
+Precision = 80% (20/25)
+Recall = 66.6667% (20/30)
+
+No.109:
+F-score = 90%
+Precision = 90% (27/30)
+Recall = 90% (27/30)
+
+No.110:
+F-score = 98.3607%
+Precision = 96.7742% (30/31)
+Recall = 100% (30/30)
+
+No.111:
+F-score = 53.5714%
+Precision = 57.6923% (15/26)
+Recall = 50% (15/30)
+
+No.112:
+F-score = 59.375%
+Precision = 55.8824% (19/34)
+Recall = 63.3333% (19/30)
+
+No.113:
+F-score = 73.913%
+Precision = 65.3846% (17/26)
+Recall = 85% (17/20)
+
+No.114:
+F-score = 86.1538%
+Precision = 80% (28/35)
+Recall = 93.3333% (28/30)
+
+No.115:
+F-score = 68.75%
+Precision = 62.8571% (22/35)
+Recall = 75.8621% (22/29)
+
+No.116:
+F-score = 57.1429%
+Precision = 61.5385% (16/26)
+Recall = 53.3333% (16/30)
+
+No.117:
+F-score = 77.9661%
+Precision = 76.6667% (23/30)
+Recall = 79.3103% (23/29)
+
+No.118:
+F-score = 59.6491%
+Precision = 62.963% (17/27)
+Recall = 56.6667% (17/30)
+
+No.119:
+F-score = 60%
+Precision = 51.2195% (21/41)
+Recall = 72.4138% (21/29)
+
+No.120:
+F-score = 73.3333%
+Precision = 73.3333% (22/30)
+Recall = 73.3333% (22/30)
+
+No.121:
+F-score = 72.7273%
+Precision = 80% (20/25)
+Recall = 66.6667% (20/30)
+
+No.122:
+F-score = 88.5246%
+Precision = 87.0968% (27/31)
+Recall = 90% (27/30)
+
+No.123:
+F-score = 82.7586%
+Precision = 85.7143% (24/28)
+Recall = 80% (24/30)
+
+No.124:
+F-score = 85.1852%
+Precision = 92% (23/25)
+Recall = 79.3103% (23/29)
+
+No.125:
+F-score = 78.5714%
+Precision = 81.4815% (22/27)
+Recall = 75.8621% (22/29)
+
+No.126:
+F-score = 80.6452%
+Precision = 78.125% (25/32)
+Recall = 83.3333% (25/30)
+
+No.127:
+F-score = 77.9661%
+Precision = 79.3103% (23/29)
+Recall = 76.6667% (23/30)
+
+No.128:
+F-score = 79.3103%
+Precision = 82.1429% (23/28)
+Recall = 76.6667% (23/30)
+
+No.129:
+F-score = 57.6271%
+Precision = 58.6207% (17/29)
+Recall = 56.6667% (17/30)
+
+No.130:
+F-score = 46.4286%
+Precision = 50% (13/26)
+Recall = 43.3333% (13/30)
+
+No.131:
+F-score = 76.4706%
+Precision = 68.4211% (26/38)
+Recall = 86.6667% (26/30)
+
+No.132:
+F-score = 84.375%
+Precision = 79.4118% (27/34)
+Recall = 90% (27/30)
+
+No.133:
+F-score = 84.2105%
+Precision = 88.8889% (24/27)
+Recall = 80% (24/30)
+
+No.134:
+F-score = 90%
+Precision = 90% (27/30)
+Recall = 90% (27/30)
+
+No.135:
+F-score = 63.3333%
+Precision = 63.3333% (19/30)
+Recall = 63.3333% (19/30)
+
+No.136:
+F-score = 61.2245%
+Precision = 78.9474% (15/19)
+Recall = 50% (15/30)
+
+No.137:
+F-score = 62.6866%
+Precision = 56.7568% (21/37)
+Recall = 70% (21/30)
+
+No.138:
+F-score = 81.3559%
+Precision = 82.7586% (24/29)
+Recall = 80% (24/30)
+
+No.139:
+F-score = 91.8033%
+Precision = 90.3226% (28/31)
+Recall = 93.3333% (28/30)
+
+No.140:
+F-score = 89.6552%
+Precision = 92.8571% (26/28)
+Recall = 86.6667% (26/30)
+
+No.141:
+F-score = 61.1111%
+Precision = 51.1628% (22/43)
+Recall = 75.8621% (22/29)
+
+No.142:
+F-score = 52%
+Precision = 65% (13/20)
+Recall = 43.3333% (13/30)
+
+No.143:
+F-score = 51.8519%
+Precision = 58.3333% (14/24)
+Recall = 46.6667% (14/30)
+
+No.144:
+F-score = 33.3333%
+Precision = 37.5% (9/24)
+Recall = 30% (9/30)
+
+No.145:
+F-score = 58.8235%
+Precision = 52.6316% (20/38)
+Recall = 66.6667% (20/30)
+
+No.146:
+F-score = 42.1053%
+Precision = 44.4444% (12/27)
+Recall = 40% (12/30)
+
+No.147:
+F-score = 82.5397%
+Precision = 78.7879% (26/33)
+Recall = 86.6667% (26/30)
+
+No.148:
+F-score = 91.8033%
+Precision = 90.3226% (28/31)
+Recall = 93.3333% (28/30)
+
+No.149:
+F-score = 88.8889%
+Precision = 96% (24/25)
+Recall = 82.7586% (24/29)
+
+No.150:
+F-score = 79.3651%
+Precision = 75.7576% (25/33)
+Recall = 83.3333% (25/30)
+
+No.151:
+F-score = 86.9565%
+Precision = 80% (20/25)
+Recall = 95.2381% (20/21)
+
+No.152:
+F-score = 78.6885%
+Precision = 77.4194% (24/31)
+Recall = 80% (24/30)
+
+No.153:
+F-score = 63.4921%
+Precision = 58.8235% (20/34)
+Recall = 68.9655% (20/29)
+
+No.154:
+F-score = 73.6842%
+Precision = 77.7778% (21/27)
+Recall = 70% (21/30)
+
+No.155:
+F-score = 73.6842%
+Precision = 77.7778% (21/27)
+Recall = 70% (21/30)
+
+No.156:
+F-score = 87.7193%
+Precision = 92.5926% (25/27)
+Recall = 83.3333% (25/30)
+
+No.157:
+F-score = 72.4138%
+Precision = 72.4138% (21/29)
+Recall = 72.4138% (21/29)
+
+No.158:
+F-score = 88.8889%
+Precision = 84.8485% (28/33)
+Recall = 93.3333% (28/30)
+
+No.159:
+F-score = 98.3051%
+Precision = 100% (29/29)
+Recall = 96.6667% (29/30)
+
+No.160:
+F-score = 88.5246%
+Precision = 84.375% (27/32)
+Recall = 93.1034% (27/29)
+
+No.161:
+F-score = 78.2609%
+Precision = 69.2308% (27/39)
+Recall = 90% (27/30)
+
+No.162:
+F-score = 87.7193%
+Precision = 92.5926% (25/27)
+Recall = 83.3333% (25/30)
+
+No.163:
+F-score = 85.7143%
+Precision = 92.3077% (24/26)
+Recall = 80% (24/30)
+
+No.164:
+F-score = 98.3051%
+Precision = 100% (29/29)
+Recall = 96.6667% (29/30)
+
+No.165:
+F-score = 90%
+Precision = 90% (27/30)
+Recall = 90% (27/30)
+
+No.166:
+F-score = 90%
+Precision = 87.0968% (27/31)
+Recall = 93.1034% (27/29)
+
+No.167:
+F-score = 68.9655%
+Precision = 71.4286% (20/28)
+Recall = 66.6667% (20/30)
+
+No.168:
+F-score = 83.0189%
+Precision = 91.6667% (22/24)
+Recall = 75.8621% (22/29)
+
+No.169:
+F-score = 93.1034%
+Precision = 93.1034% (27/29)
+Recall = 93.1034% (27/29)
+
+No.170:
+F-score = 82.7586%
+Precision = 85.7143% (24/28)
+Recall = 80% (24/30)
+
+No.171:
+F-score = 93.3333%
+Precision = 93.3333% (28/30)
+Recall = 93.3333% (28/30)
+
+No.172:
+F-score = 85.2459%
+Precision = 83.871% (26/31)
+Recall = 86.6667% (26/30)
+
+No.173:
+F-score = 71.4286%
+Precision = 76.9231% (20/26)
+Recall = 66.6667% (20/30)
+
+No.174:
+F-score = 80.6452%
+Precision = 78.125% (25/32)
+Recall = 83.3333% (25/30)
+
+No.175:
+F-score = 79.3651%
+Precision = 75.7576% (25/33)
+Recall = 83.3333% (25/30)
+
+No.176:
+F-score = 87.0968%
+Precision = 84.375% (27/32)
+Recall = 90% (27/30)
+
+No.177:
+F-score = 93.3333%
+Precision = 93.3333% (28/30)
+Recall = 93.3333% (28/30)
+
+No.178:
+F-score = 79.2453%
+Precision = 77.7778% (21/27)
+Recall = 80.7692% (21/26)
+
+No.179:
+F-score = 64.4068%
+Precision = 63.3333% (19/30)
+Recall = 65.5172% (19/29)
+
+No.180:
+F-score = 81.25%
+Precision = 76.4706% (26/34)
+Recall = 86.6667% (26/30)
+
+No.181:
+F-score = 91.8033%
+Precision = 87.5% (28/32)
+Recall = 96.5517% (28/29)
+
+No.182:
+F-score = 90.3226%
+Precision = 87.5% (28/32)
+Recall = 93.3333% (28/30)
+
+No.183:
+F-score = 82.5397%
+Precision = 78.7879% (26/33)
+Recall = 86.6667% (26/30)
+
+No.184:
+F-score = 84.7458%
+Precision = 86.2069% (25/29)
+Recall = 83.3333% (25/30)
+
+No.185:
+F-score = 86.2069%
+Precision = 89.2857% (25/28)
+Recall = 83.3333% (25/30)
+
+No.186:
+F-score = 91.5254%
+Precision = 93.1034% (27/29)
+Recall = 90% (27/30)
+
+No.187:
+F-score = 92.6829%
+Precision = 90.4762% (19/21)
+Recall = 95% (19/20)
+
+No.188:
+F-score = 96.7742%
+Precision = 93.75% (30/32)
+Recall = 100% (30/30)
+
+No.189:
+F-score = 95.2381%
+Precision = 90.9091% (30/33)
+Recall = 100% (30/30)
+
+No.190:
+F-score = 94.7368%
+Precision = 96.4286% (27/28)
+Recall = 93.1034% (27/29)
+
+No.191:
+F-score = 90.9091%
+Precision = 100% (25/25)
+Recall = 83.3333% (25/30)
+
+No.192:
+F-score = 91.2281%
+Precision = 96.2963% (26/27)
+Recall = 86.6667% (26/30)
+
+No.193:
+F-score = 66.6667%
+Precision = 70.3704% (19/27)
+Recall = 63.3333% (19/30)
+
+No.194:
+F-score = 95.082%
+Precision = 93.5484% (29/31)
+Recall = 96.6667% (29/30)
+
+No.195:
+F-score = 73.0159%
+Precision = 69.697% (23/33)
+Recall = 76.6667% (23/30)
+
+No.196:
+F-score = 76.3636%
+Precision = 84% (21/25)
+Recall = 70% (21/30)
+
+No.197:
+F-score = 64.1509%
+Precision = 73.913% (17/23)
+Recall = 56.6667% (17/30)
+
+No.198:
+F-score = 88.5246%
+Precision = 87.0968% (27/31)
+Recall = 90% (27/30)
+
+No.199:
+F-score = 88.8889%
+Precision = 84.8485% (28/33)
+Recall = 93.3333% (28/30)
+
+No.200:
+F-score = 96.6667%
+Precision = 96.6667% (29/30)
+Recall = 96.6667% (29/30)
