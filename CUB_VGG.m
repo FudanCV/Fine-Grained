@@ -6,8 +6,8 @@ ImageList = importdata('./datasets/CUB_200_2011/list_images.txt'); load('Cluster
 Y_raw = importdata('./datasets/CUB_200_2011/list_image_class_labels.txt');
 split = importdata('./datasets/CUB_200_2011/list_train_test_split.txt');
 
-caffe('set_device',0);
-rcnn_model = rcnn_create_model(1,224, './model-defs/VGG_ILSVRC_batch_1_output_fc7.prototxt', './data/caffe_nets/cub_20_finetune_iter_40000.caffemodel'); 
+caffe('set_device',2);
+rcnn_model = rcnn_create_model(1,224, './model-defs/VGG_ILSVRC_batch_1_output_fc7.prototxt', '.cub_70_finetune_iter_25000.caffemodel'); 
 rcnn_model = rcnn_load_model(rcnn_model); rcnn_model.detectors.crop_mode = 'wrap'; rcnn_model.detectors.crop_padding = 8;
   
 total_time = 0; X_trn = []; Y_trn = []; N_trn = 0; X_tst = []; Y_tst = []; N_tst = 0;
@@ -50,5 +50,5 @@ for i = 1:11788
   end
 end
 
-train_time = tic; model = train(Y_trn,sparse(X_trn),'-s 0');
+train_time = tic; model = train(Y_trn,sparse(X_trn),'-s 1');
 [Y_hat, accuracy, votes]=predict(Y_tst,sparse(X_tst),model);

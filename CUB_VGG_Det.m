@@ -7,7 +7,7 @@ Y_raw = importdata('./datasets/CUB_200_2011/list_image_class_labels.txt');
 split = importdata('./datasets/CUB_200_2011/list_train_test_split.txt');
 
 caffe('set_device',2); load('./cache/test_det_boxes.mat'); load('./cache/train_det_boxes.mat');
-rcnn_model = rcnn_create_model(1,224, './model-defs/VGG_ILSVRC_batch_1_output_fc7.prototxt', './data/caffe_nets/cub_20_finetune_iter_40000.caffemodel'); 
+rcnn_model = rcnn_create_model(1,224, './model-defs/VGG_ILSVRC_batch_1_output_fc7.prototxt', './data/caffe_nets/cub_70_finetune_iter_25000.caffemodel'); 
 rcnn_model = rcnn_load_model(rcnn_model); rcnn_model.detectors.crop_mode = 'wrap'; rcnn_model.detectors.crop_padding = 8;
   
 total_time = 0; X_trn = []; Y_trn = []; N_trn = 0; X_tst = []; Y_tst = []; N_tst = 0;
@@ -20,7 +20,7 @@ for i = 1:11788
   else
     N_tst = N_tst + 1; boxes = test_det_boxes(N_tst,:);
   end
-  fprintf('Fine-Grained VGG fc6 Features: %d\n', i); tot_th = tic; 
+  fprintf('Fine-Grained VGG fc7 Features: %d\n', i); tot_th = tic; 
   im = imread(['./datasets/CUB_200_2011/images/' ImageList{i}]);
   th = tic; features = rcnn_features(im, boxes, rcnn_model);
   fprintf(' [features: %.3fs]\n', toc(th)); total_time = total_time + toc(tot_th);

@@ -1,7 +1,7 @@
 Y = importdata('./datasets/CUB_200_2011/list_image_class_labels.txt');
 Split = importdata('./datasets/CUB_200_2011/list_train_test_split.txt');
-load('./cache/Fine.mat'); X_trn_coarse = X_trn; X_tst_coarse = X_tst;
-load('./cache/Coarse.mat'); X_trn_fine = X_trn; X_tst_fine = X_tst;
+load('./cache/Det_Coarse.mat'); X_trn_coarse = X_trn; X_tst_coarse = X_tst;
+load('./cache/Det_Fine.mat'); X_trn_fine = X_trn; X_tst_fine = X_tst;
 X_trn = [X_trn_coarse,X_trn_fine]; X_tst = [X_tst_coarse,X_tst_fine];
 
 N_trn = 0; Y_trn = []; N_tst = 0; Y_tst = []; load('Cluster.mat');
