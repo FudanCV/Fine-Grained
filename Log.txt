@@ -1,0 +1,107 @@
+cub_74_det_accu_finetune_iter_5000
+Accuracy = 85.5885% (4959/5794)
+Accuracy = 73.835% (4278/5794)
+
+cub_74_det_accu_finetune_iter_10000
+Accuracy = 86.9865% (5040/5794)
+Accuracy = 75.2675% (4361/5794)
+
+cub_74_det_accu_finetune_iter_15000
+Accuracy = 87.4353% (5066/5794)
+Accuracy = 76.1995% (4415/5794)
+
+cub_74_det_accu_finetune_iter_20000
+Accuracy = 87.0728% (5045/5794)
+Accuracy = 76.1305% (4411/5794)
+
+cub_74_det_accu_finetune_iter_25000
+Accuracy = 87.7114% (5082/5794)
+Accuracy = 77.2696% (4477/5794)
+
+cub_74_det_accu_finetune_iter_30000
+Accuracy = 87.9185% (5094/5794)
+Accuracy = 77.2351% (4475/5794)
+
+cub_74_det_accu_finetune_iter_35000
+Accuracy = 88.0739% (5103/5794)
+Accuracy = 77.3904% (4484/5794)
+
+cub_74_det_accu_finetune_iter_40000
+Accuracy = 87.8495% (5090/5794)
+Accuracy = 77.3041% (4479/5794)
+
+cub_74_det_accu_finetune_iter_45000
+Accuracy = 88.0566% (5102/5794)
+Accuracy = 77.2351% (4475/5794)
+
+cub_74_det_accu_finetune_iter_50000
+Accuracy = 88.0394% (5101/5794)
+Accuracy = 77.4249% (4486/5794)
+
+cub_74_det_accu_finetune_iter_55000
+Accuracy = 88.1602% (5108/5794)
+Accuracy = 77.5457% (4493/5794)
+
+cub_74_det_accu_finetune_iter_60000
+Accuracy = 87.9358% (5095/5794)
+Accuracy = 77.6493% (4499/5794)
+
+cub_74_det_accu_finetune_iter_65000
+Accuracy = 87.9703% (5097/5794)
+Accuracy = 77.632% (4498/5794)
+
+cub_74_det_accu_finetune_iter_70000
+Accuracy = 88.0394% (5101/5794)
+Accuracy = 77.6148% (4497/5794)
+
+cub_74_det_finetune_iter_5000
+Accuracy = 85.3987% (4948/5794)
+Accuracy = 74.0076% (4288/5794)
+
+cub_74_det_finetune_iter_10000
+Accuracy = 86.8657% (5033/5794)
+Accuracy = 75.8716% (4396/5794)
+
+cub_74_det_finetune_iter_15000
+Accuracy = 86.7622% (5027/5794)
+Accuracy = 76.096% (4409/5794)
+
+cub_74_det_finetune_iter_20000
+Accuracy = 86.6241% (5019/5794)
+Accuracy = 76.3031% (4421/5794)
+
+cub_74_det_finetune_iter_25000
+Accuracy = 87.8668% (5091/5794)
+Accuracy = 78.3051% (4537/5794)
+
+cub_74_det_finetune_iter_30000
+Accuracy = 87.9876% (5098/5794)
+Accuracy = 78.029% (4521/5794)
+
+cub_74_det_finetune_iter_35000
+Accuracy = 88.0739% (5103/5794)
+Accuracy = 78.1153% (4526/5794)
+
+cub_74_det_finetune_iter_40000
+Accuracy = 87.7805% (5086/5794)
+Accuracy = 77.96% (4517/5794)
+
+cub_74_det_finetune_iter_45000
+Accuracy = 87.9703% (5097/5794)
+Accuracy = 78.3224% (4538/5794)
+
+cub_74_det_finetune_iter_50000
+Accuracy = 88.0566% (5102/5794)
+Accuracy = 78.2016% (4531/5794)
+
+cub_17_accu_det_finetune_iter_15000
+Accuracy = 82.3611% (4772/5794)
+Accuracy = 68.5364% (3971/5794)
+
+cub_17_accu_det_finetune_iter_40000
+Accuracy = 85.8647% (4975/5794)
+Accuracy = 74.37% (4309/5794)
+
+cub_17_accu_det_finetune_iter_90000
+Accuracy = 86.1236% (4990/5794)
+Accuracy = 74.9741% (4344/5794)
