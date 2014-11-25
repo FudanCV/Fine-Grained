@@ -10,15 +10,19 @@ for i=1:11788
   if Split(List(i),:)==1 % 1 for train && 0 for test
   tot=tot+1; im = imread(['/home/wangdequan/Fine-Grained/datasets/CUB_200_2011/images/' ImageList{List(i)}]);
   load(['/home/wangdequan/Fine-Grained/datasets/CUB_200_2011/Selective_Search/' MatList{List(i)}]);
-  boxes = [boxes(:,2),boxes(:,1),boxes(:,4),boxes(:,3)];
+  boxes = FilterBoxesWidth(boxes, 20); boxes = BoxRemoveDuplicates(boxes);
+  boxes = [boxes(:,2),boxes(:,1),boxes(:,4),boxes(:,3)]; threshold = 0.29;
   %ssbox=selective_search_boxes(im); ssbox=[ssbox(:,2),ssbox(:,1),ssbox(:,4),ssbox(:,3)];
   boxes=[Det_Box(List(i),:);[1,1,size(im,2),size(im,1)];boxes]; 
-  fprintf(fn,'# %d\n',tot-1); 
+  fprintf(fn,'# %d\n',tot-1); SizeBoxes = 0;
   fprintf(fn,'/home/wangdequan/Fine-Grained/datasets/CUB_200_2011/images/%s\n',ImageList{List(i)});
   fprintf('#%d: CUB_200_2011/%s\n',tot,ImageList{List(i)});
   fprintf(fn,'%d\n%d\n%d\n',size(im,3),size(im,1),size(im,2));
   for j=1:size(boxes,1)
     boxes(j,5)=boxoverlap(boxes(j,:),Det_Box(List(i),:));
+    if (boxes(j,5)>threshold)
+      SizeBoxes = SizeBoxes + 1;
+    end
   end
   %boxes=sortrows(boxes,-5); RP=boxes(50:size(boxes,1),:); NMSL=nms(RP,0.29); boxes=boxes(1:49,:);
   %for j=1:size(NMSL)
